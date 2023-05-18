@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNNY MATH</title>
+    <link rel="stylesheet" href="mathStyle.css">
+</head>
+<body>
+    <div class="game" id="start"> 
+        <p>
+            HOW GOOD ARE YOU WITH NUMBERS?
+        </p>
+        <P>LET`S CHECK!</P>
+
+    <button onclick="startGame()">START</button>
+    </div>
+    <div class="game" id="game">
+        <div id="time">
+
+        </div>
+        
+     <div id="expression">
+        <div class="expression-part number" id="num1"></div>
+        <div class="expression-part">*</div>
+        <div class="expression-part number" id="num2"></div>
+        <div class="expression-part">+</div>
+        <div class="expression-part number" id="num3"></div>
+        <div class="expression-part">=</div>
+
+
+     </div>
+     <div id="answer-holder">      
+        <input type="number"id="answer">
+    </div>
+    <div id="button-holder">
+        <div class="my-button" onclick="cancel()">
+          DELETE
+        </div>
+        <div class="my-button" onclick="check()">
+        CONFIRM
+        </div>
+    </div>
+    </div>
+    <div class="game" id="wrong">
+  <p>
+    WRONG ANSWER!
+  </p>
+  <p> The result is: <span id="correct-answer"></span></p>
+<button onclick="next()">NEXT</button>
+ </div>
+ <div class="game" id="overtime">
+    <p>
+      TIME`S UP!
+    </p>
+  <button onclick="next()">NEXT </button>
+   </div>
+    <div class="game" id="correct">
+        <p>CORRECT!</p>
+        <button onclick="next()">NEXT</button>
+
+
+    </div>
+    <div class="game" id="game-over">
+        <p>GAME IS OVER</p>
+        <p>SCORE: <span id="score"></span>/10
+        </p>
+        <p>
+            POINTS: <span id="points"></span>
+        </p>
+    <button onclick="playAgain()">PLAY AGAIN</button>
+    </div>
+   <script src="mathScript.js"></script> 
+</body>
+</html>

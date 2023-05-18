@@ -1,0 +1,130 @@
+body{margin: 0;
+background-color: rgb(27, 13, 71);}
+button{
+  font-size: 40px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 5px;
+  left: 35%;
+  width: 30%;
+  background-color: rgb(193, 191, 191);
+  color:rgb(27, 13, 71) ;
+  font-weight: bold;
+}
+button:hover{
+  background-color: rgb(27, 13, 71);
+  color:rgb(193, 191, 191) ;
+}
+
+.game{
+  width: 80%;
+  margin: 10vh auto;
+  height: 80vh;
+  border: 2px solid rgb(193, 191, 191);
+  font-weight: bold;
+}
+#start,#game-over{
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  color: rgb(193, 191, 191);
+}
+#game-over{
+  display: none;
+}
+#game{
+  position: relative;
+  display: none;
+}
+
+#wrong,#overtime{
+  background-color: rgb(235, 133, 133);
+  color: red;
+  border: 5px solid red;
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  display: none;
+}
+
+#correct{
+  background-color: rgb(117, 237, 117);
+  position: relative;
+  color: green;
+  border: 5px solid green;
+  text-align: center;
+  font-size: 50px;
+  display: none;
+
+}
+#time{
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 0px;
+  margin-bottom: 5vh;
+  height: 20vh;
+  text-align: center;
+  font-size: 15vh;
+  color:rgb(27, 13, 71) ;
+  background-color: rgb(193, 191, 191);
+}
+#expression{
+  display: flex;
+  justify-content: space-between;
+}
+#answer-holder{
+  display: flex;
+
+}
+
+#answer{
+  font-size: 40px;
+  height: 50px;
+  background-color: rgb(193, 191, 191);
+  color: rgb(27, 13, 71);
+  width: 20%;
+  margin: 5vh 40%;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.expression-part{
+flex-grow: 1;
+color: rgb(193, 191, 191);
+margin: 20px;
+text-align: center;
+font-size: 40px;
+}
+.number{
+  flex-grow: 3;
+}
+#button-holder{
+display: flex;
+position: absolute;
+bottom: 0;
+padding: 20px;
+width: 50%;
+margin: 0 25%;
+justify-content: space-around;
+}
+ .my-button{
+  background-color: rgb(193, 191, 191);
+  font-size: 40px;
+  width: 200px;
+  text-align: center;
+  height: 50px;
+  border-radius: 10px;
+  color: rgb(27, 13, 71);
+  border: solid rgb(27, 13, 71) 2px;
+  font-weight: bold;
+
+  
+}
+.my-button:hover{
+  color: rgb(193, 191, 191);
+  border: solid rgb(193, 191, 191) 2px;
+  background-color: rgb(27, 13, 71);
+
+
+}
